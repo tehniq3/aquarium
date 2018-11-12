@@ -1,4 +1,4 @@
-// ambiental aqauarium light 
+// ambiental aqauarium light - 11.11.2018 
 // based on Dawn & Dusk controller. http://andydoz.blogspot.ro/2014_08_01_archive.html
 // 16th August 2014. (C) A.G.Doswell 2014
 // adapted sketch by niq_ro from http://nicuflorica.blogspot.ro & http://arduinotehniq.blogspot.com/
