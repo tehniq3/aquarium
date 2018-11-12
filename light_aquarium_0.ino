@@ -564,9 +564,10 @@ void ShortPush () {
 lcd.clear();
 for (long Counter = 0; Counter < 604 ; Counter ++) { //returns to the main loop if it's been run 604 times 
                                                      //(don't ask me why I've set 604,it seemed like a good number)
-  lcd.setCursor (0,0);
-  lcd.print ("Sunrise ");
- 
+  lcd.setCursor (1,0);
+  lcd.print ("made by niq_ro");
+  lcd.setCursor (1,1);
+  lcd.print ("(Nicu FLORICA)");
     
   //If the knob is pushed again, enter the mode set menu
   pushlength = pushlengthset;
