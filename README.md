@@ -1,5 +1,5 @@
 # aquarium
-few project for aquarium
+few project for aquarium - http://nicuflorica.blogspot.com/2018/11/lumina-ambientala-pentru-acvariu.html
 
 ![schematic](https://2.bp.blogspot.com/--WEUoP20S1Q/W-nENp6lAMI/AAAAAAAAYCc/yNyoDd7kx-YCdC-Q76xyvL5o3uqq-IkygCLcBGAs/s1600/schema.png)
 
