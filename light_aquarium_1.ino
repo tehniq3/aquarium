@@ -162,26 +162,30 @@ void loop () {
 if ((now.hour() == sethourstempon) and (now.minute() == setminstempon))  // sethourstempon
       {
         digitalWrite(releu, LOW);
-        lcd.setCursor (9,1);
-        lcd.print("*");
+     //   lcd.setCursor (9,1);
+     //   lcd.print("*");
         lumina = 1;
         EEPROM.write(5, lumina);
       }
 if ((now.hour() == sethourstempoff) and (now.minute() == setminstempoff))
      {
         digitalWrite(releu, HIGH);
-        lcd.setCursor (9,1);
-        lcd.print(" ");
+     //   lcd.setCursor (9,1);
+     //   lcd.print(" ");
         lumina = 0;
         EEPROM.write(5, lumina);
       }
 
 if (lumina == 1)
 {
+  lcd.setCursor (9,1);
+  lcd.print("*");
   digitalWrite(releu, LOW);
 }
 else
 {
+  lcd.setCursor (9,1);
+  lcd.print(" ");
   digitalWrite(releu, HIGH);
 }
 
@@ -192,7 +196,7 @@ lcd.setCursor (11,0);
       }
     lcd.print(sethourstempon);
     lcd.print(':');
-    if (setminson <10) 
+    if (setminstempon <10) 
       {
         lcd.print("0");
       }
@@ -204,13 +208,12 @@ lcd.setCursor (11,1);
       }
     lcd.print(sethourstempoff);
     lcd.print(':');
-    if (setminsoff <10) 
+    if (setminstempoff <10) 
       {
         lcd.print("0");
       }
     lcd.print(setminstempoff);
 
-    
     pushlength = pushlengthset;
     pushlength = getpushlength ();
     delay (10);
